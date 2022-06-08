@@ -13,6 +13,7 @@
 }
 .profile-title {
   margin-bottom: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .profile-info-container {
@@ -66,6 +67,7 @@
 
 .account-title {
   margin-bottom: 2rem;
+  font-size: 1.1rem;
 }
 
 .security {

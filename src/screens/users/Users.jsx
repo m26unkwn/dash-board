@@ -1,7 +1,14 @@
 import { Input, PrimaryButton, Table } from "../../components";
-import { searchIcon, FilterIcon, AddIcon, Avatar } from "../../assets";
+import {
+  searchIcon,
+  FilterIcon,
+  AddIcon,
+  Avatar,
+  ForwardIcon,
+  BackwardIcon,
+} from "../../assets";
 import "./users.css";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import axios from "axios";
 
 export const Users = () => {
@@ -25,7 +32,27 @@ export const Users = () => {
         setLoader(false);
       }
     })();
-  }, []);
+  }, [index]);
+
+  const changeIndex = (value) => {
+    if (value === "next") {
+      setIndex((prev) => prev + 1);
+    } else {
+      setIndex((prev) => prev - 1);
+    }
+  };
+
+  const selectedClass = useCallback(
+    (value) => {
+      console.log(value);
+      if (index === value) {
+        return "pagination-btn selected";
+      } else {
+        return "pagination-btn";
+      }
+    },
+    [index],
+  );
 
   return (
     <div className='account users-container'>
@@ -61,7 +88,30 @@ export const Users = () => {
         <h1>Loading</h1>
       )}
 
-      <div className='pagination'></div>
+      <div className='pagination-container'>
+        <div className='pagination'>
+          <button
+            disabled={index === 1}
+            className='pagination-btn'
+            onClick={() => changeIndex("prev")}>
+            <img src={ForwardIcon} alt='next' />
+          </button>
+          {[...new Array(4)].fill(4).map((_, i) => (
+            <button
+              onClick={() => setIndex(i + 1)}
+              className={selectedClass(i + 1)}>
+              {i + 1}
+            </button>
+          ))}
+
+          <button
+            className='pagination-btn'
+            disabled={index === 4}
+            onClick={() => changeIndex("next")}>
+            <img src={BackwardIcon} alt='next' />
+          </button>
+        </div>
+      </div>
     </div>
   );
 };

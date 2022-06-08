@@ -85,3 +85,26 @@ td {
 td:first-child > img {
   border-radius: 50%;
 }
+
+.pagination-container {
+  display: flex;
+}
+
+.pagination {
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+  font-weight: 500;
+}
+
+.selected {
+  background-color: var(--FIELD-COLOR);
+}
+
+.pagination-btn {
+  border: 1px solid var(--FIELD-COLOR);
+  color: var(--SECONDARY-TEXT-COLOR);
+  border-radius: 10px;
+  padding: 10px 1rem;
+  color: var(--SECONDARY-TEXT-COLOR);
+}

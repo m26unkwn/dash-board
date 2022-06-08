@@ -23,10 +23,6 @@
   font-family: inherit;
 }
 
-.input-field > input[password] {
-  font-size: 1rem;
-}
-
 .input-field > input:focus {
   background: var(--FIELD-COLOR);
 }

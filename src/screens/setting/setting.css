@@ -1,0 +1,152 @@
+.setting-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.profile {
+  background: var(--WHITE-COLOR);
+  padding: 2rem;
+  border-radius: 1.2rem;
+  height: fit-content;
+}
+.profile-title {
+  margin-bottom: 1.5rem;
+}
+
+.profile-info-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile-info > img {
+  border-radius: 50%;
+}
+.profile-info > button {
+  color: var(--SECONDAY-TEXT-COLOR);
+  border: 2px solid var(--SECONDAY-TEXT-COLOR);
+
+  margin-top: 1rem;
+  padding: 4px 12px;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: bold;
+}
+.profile-form {
+  width: 70%;
+}
+
+.form-btn {
+  display: flex;
+}
+.form-btn > button {
+  width: fit-content;
+  margin-left: auto;
+  padding: 10px 2rem;
+}
+
+.account-container {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.account {
+  background: var(--WHITE-COLOR);
+  padding: 2rem;
+  border-radius: 1.2rem;
+}
+
+.account-title {
+  margin-bottom: 2rem;
+}
+
+.security {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.account-delete > h2 {
+  color: var(--DANGER-COLOR);
+}
+
+.account-delete > button {
+  color: var(--DANGER-COLOR);
+
+  font-weight: bold;
+  text-align: center;
+
+  border: 1px solid var(--DANGER-COLOR);
+  border-radius: 10px;
+  padding: 1rem;
+  width: 90%;
+}
+
+/* Toggle Button CSS */
+
+.toggle-button {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+
+.toggle-button input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  left: 4px;
+  top: 5px;
+  background-color: var(--WHITE-COLOR);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.toggle-button input:checked + .slider {
+  background-color: var(--LIGHT-GREEN-COLOR);
+}
+
+.toggle-button input:focus + .slider {
+  box-shadow: 0 0 1px var(--LIGHT-GREEN-COLOR);
+}
+
+.toggle-button input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

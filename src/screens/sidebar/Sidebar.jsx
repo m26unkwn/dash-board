@@ -16,7 +16,9 @@ export const Sidebar = () => {
             {navItems.map(({ icon, title, to }) => (
               <NavLink
                 to={to}
-                className={({ active }) => (active ? "nav-item-active" : "")}>
+                className={({ isActive }) =>
+                  isActive ? "nav-item-active" : ""
+                }>
                 <img src={icon} alt='home_icon' />
                 <span className='nav-title'>{title}</span>
               </NavLink>

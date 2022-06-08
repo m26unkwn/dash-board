@@ -159,7 +159,7 @@
 @media (min-width: 920px) {
   .setting-container {
     flex-direction: row;
-    gap: 4rem;
+    gap: 2rem;
   }
   .account-container {
     width: 25rem;

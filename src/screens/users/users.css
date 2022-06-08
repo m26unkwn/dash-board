@@ -48,6 +48,9 @@
   width: fit-content;
   margin: 0;
   padding: 10px 1.5rem;
+
+  display: flex;
+  gap: 10px;
 }
 
 /* table css */
@@ -107,4 +110,16 @@ td:first-child > img {
   border-radius: 10px;
   padding: 10px 1rem;
   color: var(--SECONDARY-TEXT-COLOR);
+}
+
+.no-data {
+  text-align: center;
+  color: var(--LIGHT-GREY-COLOR);
+  margin-top: 1rem;
+}
+
+.table-fallback {
+  text-align: center;
+  color: var(--LIGHT-GREY-COLOR);
+  margin-top: 1rem;
 }

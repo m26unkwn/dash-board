@@ -9,7 +9,7 @@ export const Table = ({ data }) => {
   return (
     <tr>
       <td>
-        <img src={thumbnail} />
+        <img src={thumbnail} alt='profile' />
       </td>
       <td>
         {first} {last}

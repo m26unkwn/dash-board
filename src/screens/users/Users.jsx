@@ -1,19 +1,20 @@
-import { Input, PrimaryButton, Table } from "../../components";
+import { Input, FilterUsers } from "../../components";
 import {
   searchIcon,
   FilterIcon,
   AddIcon,
-  Avatar,
   ForwardIcon,
   BackwardIcon,
 } from "../../assets";
 import "./users.css";
 import { useState, useEffect, useCallback } from "react";
 import axios from "axios";
+import { debounce } from "../../utils";
 
 export const Users = () => {
   const [users, setUsers] = useState([]);
   const [loader, setLoader] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
   const [index, setIndex] = useState(1);
 
   useEffect(() => {
@@ -34,17 +35,16 @@ export const Users = () => {
     })();
   }, [index]);
 
-  const changeIndex = (value) => {
+  const changeIndex = useCallback((value) => {
     if (value === "next") {
       setIndex((prev) => prev + 1);
     } else {
       setIndex((prev) => prev - 1);
     }
-  };
+  }, []);
 
-  const selectedClass = useCallback(
+  const selectedButton = useCallback(
     (value) => {
-      console.log(value);
       if (index === value) {
         return "pagination-btn selected";
       } else {
@@ -54,13 +54,21 @@ export const Users = () => {
     [index],
   );
 
+  const onFilter = debounce((e) => {
+    setSearchQuery(e.target.value);
+  }, 2000);
+
   return (
     <div className='account users-container'>
       <div className='users-header'>
         <h2 className='users-title'>User Records</h2>
         <div className='users-filters'>
           <div className='user-search'>
-            <Input placholder='Search in table...' type='text' />
+            <Input
+              placholder='Search in table...'
+              type='text'
+              onChange={onFilter}
+            />
             <button>
               <img src={searchIcon} alt='Search-user' />
             </button>
@@ -76,17 +84,7 @@ export const Users = () => {
         </div>
       </div>
 
-      {users.length > 0 ? (
-        <table>
-          <tbody>
-            {users.map((user) => (
-              <Table key={user.cell} data={user} />
-            ))}
-          </tbody>
-        </table>
-      ) : (
-        <h1>Loading</h1>
-      )}
+      <FilterUsers users={users} loader={loader} searchQuery={searchQuery} />
 
       <div className='pagination-container'>
         <div className='pagination'>
@@ -99,7 +97,7 @@ export const Users = () => {
           {[...new Array(4)].fill(4).map((_, i) => (
             <button
               onClick={() => setIndex(i + 1)}
-              className={selectedClass(i + 1)}>
+              className={selectedButton(i + 1)}>
               {i + 1}
             </button>
           ))}

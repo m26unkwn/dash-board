@@ -1,0 +1,26 @@
+.icon-btn {
+  color: var(--SECONDAY-TEXT-COLOR);
+  background: var(--WHITE-COLOR);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+
+  gap: 8px;
+  padding: 10px 1rem;
+  font-size: 12px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+.icon-btn:active {
+  transform: scale(0.94);
+}
+
+.icon-btn > img {
+  width: 14px;
+  height: 14px;
+}

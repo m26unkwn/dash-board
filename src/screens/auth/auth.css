@@ -1,0 +1,80 @@
+.auth-container {
+  width: 100%;
+  display: flex;
+}
+
+.auth-sidebar {
+  width: 30rem;
+  height: 100vh;
+
+  background: var(--PRIMARY-COLOR);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.auth-siderbar-content {
+  font-size: 4rem;
+  font-weight: bold;
+
+  color: var(--WHITE-COLOR);
+}
+
+.auth-form-container {
+  width: calc(100% - 30rem);
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.auth-form-wrapper {
+  width: 25rem;
+}
+
+.auth-form-wrapper > * + * {
+  margin-top: 1.5rem;
+}
+
+.auth-head-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.auth-head-sub-title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--BLACK-COLOR);
+}
+
+.auth-icon-button {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.auth-form {
+  background: var(--WHITE-COLOR);
+  width: 100%;
+
+  border-radius: 1.2rem;
+  padding: 2rem;
+}
+
+.link,
+.pwd-forget {
+  color: var(--LINK-COLOR);
+  font-weight: 500;
+  text-decoration: none;
+}
+.register-link {
+  text-align: center;
+}
+
+/* signup css */
+
+.user-input {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}

@@ -1,17 +1,16 @@
 .btn {
-  all: unset;
   text-align: center;
+
   background: var(--PRIMARY-COLOR);
   color: var(--WHITE-COLOR);
+
   margin-top: 1.5rem;
   width: 100%;
   border-radius: 10px;
   padding: 10px;
   font-size: 1rem;
+
   font-weight: bold;
-  transition: 0.2s ease-in;
   cursor: pointer;
 }
-.btn:active {
-  transform: scale(0.94);
-}
+

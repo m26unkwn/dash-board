@@ -1,8 +1,7 @@
 .sidebar-container {
-  width: 15rem;
+  width: 20%;
   height: 95vh;
-  margin: 1rem;
-  position: fixed;
+  position: sticky;
   border-radius: 1.8rem;
   background: var(--PRIMARY-COLOR);
 }

@@ -1,0 +1,51 @@
+.setting-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.profile {
+  background: var(--WHITE-COLOR);
+  padding: 2rem;
+  border-radius: 1.2rem;
+}
+.profile-title {
+  margin-bottom: 1.5rem;
+}
+
+.profile-info-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile-info > img {
+  border-radius: 50%;
+}
+.profile-info > button {
+  color: var(--SECONDAY-TEXT-COLOR);
+  border: 2px solid var(--SECONDAY-TEXT-COLOR);
+
+  margin-top: 1rem;
+  padding: 4px 12px;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: bold;
+}
+.profile-form {
+  width: 70%;
+}
+
+.form-btn {
+  display: flex;
+}
+.form-btn > button {
+  width: fit-content;
+  margin-left: auto;
+  padding: 10px 2rem;
+}

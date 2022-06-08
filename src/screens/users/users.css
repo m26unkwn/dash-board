@@ -1,0 +1,27 @@
+.users-container {
+  margin-top: 2rem;
+}
+.users-title {
+  font-size: 1.1rem;
+}
+
+.users-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-search {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.user-search > input {
+  margin: 0;
+}
+
+.user-search > button {
+  position: absolute;
+  right: 12px;
+}

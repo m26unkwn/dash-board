@@ -10,6 +10,8 @@
 
   --WHITE-COLOR: #ffff;
   --BLACK-COLOR: #000000;
+  --LIGHT-GREEN-COLOR: #88e15e;
+  --DANGER-COLOR: #af0000;
 }
 
 *,
@@ -26,13 +28,18 @@ body {
 }
 
 .app-container {
-  display: flex;
+  display: grid;
+  grid-template-areas:
+    "sidebar main "
+    "sidebar main ";
+  grid-template-columns: 15rem auto;
+
   margin: 1rem;
 }
 
 .main-container {
+  grid-area: main;
   margin: 1rem 2em;
-  width: 100%;
 }
 
 button {

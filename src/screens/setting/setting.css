@@ -1,8 +1,10 @@
 .setting-container {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 2rem;
   margin-top: 2rem;
+  margin-right: 2rem;
 }
 
 .profile {
@@ -53,10 +55,11 @@
 }
 
 .account-container {
-  width: 40%;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+
+  width: 100%;
 }
 
 .account {
@@ -151,4 +154,14 @@
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+@media (min-width: 920px) {
+  .setting-container {
+    flex-direction: row;
+    gap: 4rem;
+  }
+  .account-container {
+    width: 25rem;
+  }
 }

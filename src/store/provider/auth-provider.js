@@ -8,6 +8,7 @@ import {
 
 import { useContext, createContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const authContext = createContext();
 
@@ -30,8 +31,9 @@ const AuthProvider = ({ children }) => {
       );
       setAuth(true);
       sessionStorage.setItem("auth", response.user.accessToken);
+      toast.success("Login Successfully");
     } catch (error) {
-      console.log(error);
+      toast.error(error.message);
     }
   };
 
@@ -45,8 +47,9 @@ const AuthProvider = ({ children }) => {
       );
       setAuth(true);
       sessionStorage.setItem("auth", response.user.accessToken);
+      toast.success("Signup Successfully");
     } catch (error) {
-      console.log(error);
+      toast.error(error.message);
     }
   };
 
@@ -57,8 +60,9 @@ const AuthProvider = ({ children }) => {
       setAuth(true);
       sessionStorage.setItem("auth", response.user.accessToken);
       navigate("/dashboard");
+      toast.success("Login Successfully");
     } catch (error) {
-      console.log(error);
+      toast.error(error.message);
     }
   };
 
@@ -68,6 +72,7 @@ const AuthProvider = ({ children }) => {
     setAuth(false);
     sessionStorage.removeItem("auth");
     navigate("/");
+    toast.success("Logout Successfully");
   };
 
   return (

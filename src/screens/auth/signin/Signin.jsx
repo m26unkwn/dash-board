@@ -3,6 +3,7 @@ import { GoogleIcon, AppleIcon } from "../../../assets";
 import { Link, Navigate } from "react-router-dom";
 import { useState } from "react";
 import { useAuth } from "../../../store/provider/auth-provider";
+import { toast } from "react-toastify";
 
 export const Signin = () => {
   const [loginInfo, setLoginInfo] = useState({
@@ -23,6 +24,10 @@ export const Signin = () => {
     signInUser(email, password);
   };
 
+  const siginUserApple = () => {
+    toast.warning("Apple signin coming soon");
+  };
+
   return (
     <>
       {auth ? (
@@ -39,9 +44,17 @@ export const Signin = () => {
               text='Sign in with Google'
               onClick={signInUsingGoogle}
             />
-            <IconButton icon={AppleIcon} text='Sign in with Apple' />
+            <IconButton
+              icon={AppleIcon}
+              text='Sign in with Apple'
+              onClick={siginUserApple}
+            />
           </div>
-          <form className='auth-form'>
+          <form
+            className='auth-form'
+            onSubmit={(e) =>
+              signinUserHandler(e, loginInfo.email, loginInfo.password)
+            }>
             <Input
               type='text'
               label='Email Address'
@@ -56,12 +69,7 @@ export const Signin = () => {
               placholder='********'
             />
             <p className='pwd-forget'>Forget password?</p>
-            <PrimaryButton
-              text='Sign In'
-              onClick={(e) =>
-                signinUserHandler(e, loginInfo.email, loginInfo.password)
-              }
-            />
+            <PrimaryButton text='Sign In' />
           </form>
           <p className='register-link'>
             Don’t have an account?

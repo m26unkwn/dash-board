@@ -1,10 +1,16 @@
-import { IconButton, Input, PrimaryButton } from "../../../components";
+import { IconButton } from "../../../components";
 import { GoogleIcon, AppleIcon } from "../../../assets";
 import { Link, Navigate } from "react-router-dom";
 import { useAuth } from "../../../store/provider/auth-provider";
+import { SignupForm } from "./form/SignupForm";
+import { toast } from "react-toastify";
 
 export const Signup = () => {
-  const { auth } = useAuth();
+  const { auth, signInUsingGoogle } = useAuth();
+
+  const signUpUserApple = () => {
+    toast.warning("Apple signup coming soon");
+  };
   return (
     <>
       {auth ? (
@@ -18,28 +24,18 @@ export const Signup = () => {
             </p>
           </div>
           <div className='auth-icon-button'>
-            <IconButton icon={GoogleIcon} text='Sign up with Google' />
-            <IconButton icon={AppleIcon} text='Sign up with Apple' />
+            <IconButton
+              icon={GoogleIcon}
+              text='Sign up with Google'
+              onClick={signInUsingGoogle}
+            />
+            <IconButton
+              icon={AppleIcon}
+              text='Sign up with Apple'
+              onClick={signUpUserApple}
+            />
           </div>
-          <form className='auth-form'>
-            <div className='user-input'>
-              <Input type='text' label='First Name' placholder='Jhon' />
-              <Input type='text' label='Last Name' placholder='Doe' />
-            </div>
-            <Input
-              type='text'
-              label='Email Address'
-              placholder='jhondoe@gmail.com'
-            />
-            <Input type='password' label='Password' placholder='********' />
-            <Input
-              type='password'
-              label='Confirm Password'
-              placholder='********'
-            />
-
-            <PrimaryButton text='Sign Up' />
-          </form>
+          <SignupForm />
           <p className='register-link'>
             Already have an account?{" "}
             <Link to='/' className='link'>

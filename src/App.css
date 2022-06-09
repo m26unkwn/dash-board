@@ -50,6 +50,9 @@ body {
   grid-area: main;
   margin: 1rem 2em;
 }
+.auth-container {
+  width: 100%;
+}
 
 button {
   all: unset;

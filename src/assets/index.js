@@ -17,3 +17,5 @@ export { default as RevenueIcon } from "./revenue.svg";
 export { default as LikeIcon } from "./like.svg";
 export { default as UsersIcon } from "./users.svg";
 export { default as TransIcon } from "./transactionSmall.svg";
+export { default as EyeIcon } from "./eye.svg";
+export { default as DisableEye } from "./disableEye.svg";

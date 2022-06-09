@@ -31,10 +31,11 @@
 .nav-items-end {
   margin-top: auto;
   color: var(--WHITE-COLOR);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
-.nav-items-end > p {
-  margin: 1rem 0;
-}
+
 .nav-item-active {
   font-weight: bold;
 }
@@ -42,4 +43,8 @@
 a {
   text-decoration: none;
   color: var(--WHITE-COLOR);
+}
+
+.logout-btn {
+  font-weight: 500;
 }

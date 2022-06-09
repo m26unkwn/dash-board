@@ -13,3 +13,7 @@ export { default as FilterIcon } from "./filter.svg";
 export { default as AddIcon } from "./add.svg";
 export { default as ForwardIcon } from "./forward.svg";
 export { default as BackwardIcon } from "./backward.svg";
+export { default as RevenueIcon } from "./revenue.svg";
+export { default as LikeIcon } from "./like.svg";
+export { default as UsersIcon } from "./users.svg";
+export { default as TransIcon } from "./transactionSmall.svg";

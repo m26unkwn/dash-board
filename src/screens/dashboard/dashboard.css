@@ -1,0 +1,9 @@
+.dashboard-container {
+  margin-top: 2rem;
+}
+
+.dashboard-data {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}

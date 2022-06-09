@@ -72,7 +72,7 @@ export const Signin = () => {
             <PrimaryButton text='Sign In' />
           </form>
           <p className='register-link'>
-            Don’t have an account?
+            Don’t have an account?{" "}
             <Link to='/signup' className='link'>
               Register here
             </Link>

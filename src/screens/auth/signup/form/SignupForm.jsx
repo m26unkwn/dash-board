@@ -68,7 +68,7 @@ export const SignupForm = () => {
       <div className='signup-checkbox'>
         <input type='checkbox' />
         <p className='register-link'>
-          I agree the ? <span className='link'>terms and condition</span>
+          I agree the <span className='link'>terms and condition</span>
         </p>
       </div>
 

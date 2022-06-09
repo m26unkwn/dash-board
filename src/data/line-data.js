@@ -1,4 +1,4 @@
-export const lineChart = [
+export const lineData = [
   {
     date: "May - June 2021",
     data: [

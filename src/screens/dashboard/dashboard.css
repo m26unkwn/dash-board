@@ -9,9 +9,6 @@
 }
 
 .dashboard-chart-container {
-  background: var(--WHITE-COLOR);
-  font-size: 1rem;
-
   border-radius: 1.1rem;
   margin-top: 2rem;
   padding: 2rem;
@@ -22,6 +19,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.chart-title {
+  font-size: 1.2rem;
 }
 
 .data-select {
@@ -68,4 +69,30 @@
 
   width: 100%;
   height: 20rem;
+}
+
+.dashboard-bottom-container {
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.dashboard-bottom-child {
+  flex: 1;
+}
+
+.piechart-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pichart-container {
+  height: 10rem;
+  margin-top: 1rem;
+  display: flex;
+  gap: 2rem;
+}
+.pichart-container > div {
+  flex: 1;
 }

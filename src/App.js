@@ -10,8 +10,8 @@ function App() {
       <div className='main-container'>
         <Header />
         <Routes>
-          {/* <Route path='/' element={<Auth />} />
-        <Route path='/signup' element={<Auth />} /> */}
+          <Route path='/' element={<Auth />} />
+          <Route path='/signup' element={<Auth />} />
           <Route path='/setting' element={<Setting />} />
           <Route path='/users' element={<Users />} />
           <Route path='/dashboard' element={<Dashboard />} />

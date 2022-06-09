@@ -5,8 +5,7 @@ export const nameFilter = (users, query) => {
         gender.toLowerCase().includes(query.toLowerCase()) ||
         email.toLowerCase().includes(query.toLowerCase()) ||
         country.toLowerCase().includes(query.toLowerCase()) ||
-        first.toLowerCase().includes(query.toLowerCase()) ||
-        last.toLowerCase().includes(query.toLowerCase()),
+        `${first} ${last}`.toLowerCase().includes(query.toLowerCase()),
     );
   }
   return users;

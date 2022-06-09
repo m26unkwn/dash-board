@@ -96,3 +96,49 @@
 .pichart-container > div {
   flex: 1;
 }
+
+.schedule-container {
+  margin-top: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.first::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 5rem;
+  width: 5px;
+  margin-right: 1rem;
+  background: var(--LIGHT-GREEN-COLOR);
+}
+.second::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 5rem;
+  width: 5px;
+  margin-right: 1rem;
+  background: var(--LINK-COLOR);
+}
+
+.schedule-child {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.schedule-title {
+  font-size: 1rem;
+  color: var(--DARKE-GREY-COLOR);
+  font-weight: 500;
+}
+
+.schedule-place,
+.schedule-time {
+  font-size: 14px;
+  color: var(--SECONDARY-TEXT-COLOR);
+}

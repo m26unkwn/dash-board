@@ -72,6 +72,22 @@ export const Dashboard = () => {
         </div>
         <div className='account dashboard-bottom-child'>
           <h2 className='chart-title'>Today’s schedule</h2>
+          <div className='schedule-container'>
+            <div className='schedule-child first'>
+              <h2 className='schedule-title'>
+                Meeting with suppliers from Kuta Bali
+              </h2>
+              <p className='schedule-timev'>14.00-15.00</p>
+              <p className='schedule-place'>at Sunset Road, Kuta, Bali </p>
+            </div>
+            <div className='schedule-child second'>
+              <h2 className='schedule-title'>
+                Meeting with suppliers from Kuta Bali
+              </h2>
+              <p className='schedule-timev'>14.00-15.00</p>
+              <p className='schedule-place'>at Sunset Road, Kuta, Bali </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

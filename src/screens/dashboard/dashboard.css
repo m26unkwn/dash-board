@@ -81,7 +81,7 @@
   flex: 1;
 }
 
-.piechart-header {
+.dashboard-bottom-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -128,6 +128,13 @@
   margin-left: 1rem;
   display: flex;
   flex-direction: column;
+  gap: 5px;
+}
+
+.schedule-btn {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
   gap: 5px;
 }
 

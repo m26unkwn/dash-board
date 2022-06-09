@@ -2,6 +2,7 @@ import React, { useCallback, useState } from "react";
 import "./dashboard.css";
 import { InfoCard, PieChartContainer, TwoLineChart } from "../../components";
 import { dashData, pieData, lineData } from "../../data";
+import { BackwardIcon, ForwardIcon } from "../../assets";
 
 export const Dashboard = () => {
   const [lineChart, setLineChart] = useState(lineData[0].data);
@@ -52,7 +53,7 @@ export const Dashboard = () => {
       </div>
       <div className='dashboard-bottom-container'>
         <div className='account dashboard-bottom-child'>
-          <div className='piechart-header'>
+          <div className='dashboard-bottom-header'>
             <h2 className='chart-title'>Top Products</h2>
             <div className='data-selector'>
               <select
@@ -71,7 +72,13 @@ export const Dashboard = () => {
           </div>
         </div>
         <div className='account dashboard-bottom-child'>
-          <h2 className='chart-title'>Today’s schedule</h2>
+          <div className='dashboard-bottom-header'>
+            <h2 className='chart-title'>Today’s schedule</h2>
+            <button className='schedule-btn'>
+              <span>Sea All</span> <img src={BackwardIcon} alt='seall' />
+            </button>
+          </div>
+
           <div className='schedule-container'>
             <div className='schedule-child first'>
               <h2 className='schedule-title'>

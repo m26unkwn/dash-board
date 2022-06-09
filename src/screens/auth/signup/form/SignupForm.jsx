@@ -65,6 +65,12 @@ export const SignupForm = () => {
         onChange={(e) => onChangeSignup(e, "SET_CNFRM_PASSWORD")}
         eye={true}
       />
+      <div className='signup-checkbox'>
+        <input type='checkbox' />
+        <p className='register-link'>
+          I agree the ? <a className='link'>terms and condition</a>
+        </p>
+      </div>
 
       <PrimaryButton text='Sign Up' onClick={(e) => signUpUserHandler(e)} />
     </form>

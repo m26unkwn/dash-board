@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useCallback, useState } from "react";
 import "./dashboard.css";
-import { InfoCard } from "../../components";
-import { RevenueIcon } from "../../assets";
-import { dashData } from "../../data";
+import { InfoCard, TwoLineChart } from "../../components";
+import { dashData, lineChart } from "../../data";
 
 export const Dashboard = () => {
+  const [chartData, setChartData] = useState(lineChart[0].data);
+
+  const changeChartData = useCallback((e) => {
+    const filterChartData = lineChart.find(
+      (data) => data.date === e.target.value,
+    );
+    setChartData(filterChartData.data);
+  }, []);
+
   return (
     <div className='dashboard-container'>
       <div className='dashboard-data'>
@@ -16,10 +24,12 @@ export const Dashboard = () => {
         <h2 className='chart-title'>Activities</h2>
         <div className='chart-action'>
           <div className='data-selector'>
-            <select className='data-select'>
-              <option value='may-june 2021'>May - June 2021</option>
-              <option value='june-july 2021'>June - July 2021</option>
-              <option value='july-august 2021'>June - July 2021</option>
+            <select onChange={changeChartData} className='data-select'>
+              {lineChart.map(({ date }) => (
+                <option key={date} value={date}>
+                  {date}
+                </option>
+              ))}
             </select>
           </div>
           <div className='chart-values'>
@@ -32,7 +42,9 @@ export const Dashboard = () => {
               <p>User</p>
             </div>
           </div>
-          <div className="chart"></div>
+        </div>
+        <div className='chart'>
+          <TwoLineChart data={chartData} />
         </div>
       </div>
       <div className='dashboard-bottom-container'></div>

@@ -7,3 +7,12 @@
   justify-content: space-between;
   gap: 3rem;
 }
+
+.dashboard-chart {
+  background: var(--WHITE-COLOR);
+  font-size: 1rem;
+
+  border-radius: 1.1rem;
+  margin-top: 2rem;
+  padding: 2rem;
+}

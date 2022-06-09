@@ -10,7 +10,10 @@ export const InfoCard = ({ cardData }) => {
       </div>
       <div className='card-content'>
         <p>Total {title}</p>
-        <h2>${number}</h2>
+        <h2>
+          {title === "Revenues" && "$"}
+          {number}
+        </h2>
       </div>
     </div>
   );

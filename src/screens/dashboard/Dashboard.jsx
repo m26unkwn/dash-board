@@ -12,7 +12,9 @@ export const Dashboard = () => {
           <InfoCard key={data.title} cardData={data} />
         ))}
       </div>
-      <div className='dashboard-chart'></div>
+      <div className='dashboard-chart'>
+        <h2 className='chart-title'>Activities</h2>
+      </div>
       <div className='dashboard-bottom-container'></div>
     </div>
   );

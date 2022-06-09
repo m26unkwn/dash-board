@@ -31,7 +31,7 @@ export const Input = ({
         onChange={onChange}
         required
       />
-      {/* {eye && value.length > 0 && (
+      {eye && value.length > 0 && (
         <button className=' eye' onClick={isVisibleHandler}>
           {isVisible ? (
             <img src={DisableEye} alt='hide_password' />
@@ -39,7 +39,7 @@ export const Input = ({
             <img src={EyeIcon} alt='show_password' />
           )}
         </button>
-      )} */}
+      )}
     </div>
   );
 };

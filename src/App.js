@@ -13,6 +13,7 @@ import {
 import { useAuth } from "./store/provider/auth-provider";
 
 import { ToastContainer } from "react-toastify";
+
 import "react-toastify/dist/ReactToastify.css";
 
 import { PrivateRoute } from "./components/PrivateRoute/PrivateRoute";

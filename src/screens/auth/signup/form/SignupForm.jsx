@@ -1,4 +1,4 @@
-import { useCallback, useReducer } from "react";
+import { useReducer } from "react";
 import { toast } from "react-toastify";
 import { Input, PrimaryButton } from "../../../../components";
 
@@ -11,14 +11,14 @@ export const SignupForm = () => {
   const { signUpUser } = useAuth();
   const { firstName, lastName, email, password, confirmPassword } = signupState;
 
-  const signUpUserHandler = useCallback((e) => {
+  const signUpUserHandler = (e) => {
     e.preventDefault();
     if (signupValidation(signupState, dispatch)) {
       signUpUser(email, password);
     } else {
       toast.warning("Please Enter All The Fields");
     }
-  }, []);
+  };
 
   const onChangeSignup = (e, type) => {
     dispatch({ type, payload: e.target.value });
@@ -68,7 +68,7 @@ export const SignupForm = () => {
       <div className='signup-checkbox'>
         <input type='checkbox' />
         <p className='register-link'>
-          I agree the ? <a className='link'>terms and condition</a>
+          I agree the ? <span className='link'>terms and condition</span>
         </p>
       </div>
 

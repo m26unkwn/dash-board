@@ -16,7 +16,7 @@ export const Input = ({
         type={type}
         value={value}
         pattern={pattern}
-        onChange={(e) => onChange(e)}
+        onChange={onChange}
         required
       />
     </div>

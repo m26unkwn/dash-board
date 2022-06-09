@@ -24,7 +24,11 @@ export const TwoLineChart = ({ data }) => {
           bottom: 5,
         }}>
         * <CartesianGrid horizontal={true} vertical={false} />
-        <XAxis dataKey='week' color='var(--FIELD-COLOR)' />
+        <XAxis
+          dataKey='week'
+          color='var(--FIELD-COLOR)'
+          interval={"preserveEnd"}
+        />
         <YAxis />
         <Tooltip />
         <Legend />

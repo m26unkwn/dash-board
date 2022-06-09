@@ -67,7 +67,7 @@ export const Users = () => {
             <Input
               placholder='Search in table...'
               type='text'
-              onChange={onFilter}
+              onChange={(e) => onFilter(e)}
             />
             <button>
               <img src={searchIcon} alt='Search-user' />

@@ -9,3 +9,7 @@ export { default as NotificationIcon } from "./notification.svg";
 export { default as searchIcon } from "./search.svg";
 export { default as Avatar } from "./avatar.png";
 export { default as ProfileImg } from "./profile.png";
+export { default as FilterIcon } from "./filter.svg";
+export { default as AddIcon } from "./add.svg";
+export { default as ForwardIcon } from "./forward.svg";
+export { default as BackwardIcon } from "./backward.svg";

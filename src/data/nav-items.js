@@ -6,7 +6,7 @@ import {
   UserIcon,
 } from "../assets";
 
-const navItems = [
+export const navItems = [
   {
     icon: DashboardIcon,
     title: "Dashboard",
@@ -33,5 +33,3 @@ const navItems = [
     to: "/setting",
   },
 ];
-
-export { navItems };

@@ -79,9 +79,11 @@ tr:nth-child(even) {
 }
 
 td {
+  font-size: 1rem;
   padding: 1rem 2rem;
-  width: max-content;
   font-weight: 500;
+
+  width: max-content;
   text-align: left;
 }
 

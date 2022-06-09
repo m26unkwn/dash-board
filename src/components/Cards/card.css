@@ -1,0 +1,27 @@
+.card-container {
+  border-radius: 1.1rem;
+  flex: 1;
+
+  padding: 2rem;
+}
+
+.green {
+  background: var(--LIGHT-ACCENT-GREEN-COLOR);
+}
+.yellow {
+  background: var(--LIGHT-ACCENT-YELLOW-COLOR);
+}
+.pink {
+  background: var(--LIGHT-ACCENT-PINK-COLOR);
+}
+.sky {
+  background: var(--LIGHT-ACCENT-SKY-COLOR);
+}
+.card-icon {
+  display: flex;
+  justify-content: flex-end;
+}
+/* 6361994528 */
+.card-content > :first-child {
+  margin: 10px 0;
+}

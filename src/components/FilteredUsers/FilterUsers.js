@@ -7,8 +7,8 @@ export const FilterUsers = ({ users, searchQuery, loader }) => {
     () => nameFilter(users, searchQuery),
     [searchQuery, users],
   );
-  if (users.length > 0) {
-    if (filteredUsers.length > 0) {
+  if (users?.length > 0) {
+    if (filteredUsers?.length > 0) {
       return (
         <table>
           <tbody>
@@ -31,5 +31,7 @@ export const FilterUsers = ({ users, searchQuery, loader }) => {
         <Loader />
       </div>
     );
+  } else {
+    return null;
   }
 };

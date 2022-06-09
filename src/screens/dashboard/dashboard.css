@@ -16,3 +16,49 @@
   margin-top: 2rem;
   padding: 2rem;
 }
+
+.chart-action {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.data-select {
+  display: block;
+  padding: 0.5rem;
+  border: 1px solid var(--FIELD-COLOR);
+  border-radius: 0.3rem;
+  line-height: 1.5;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.chart-values {
+  display: flex;
+  gap: 2rem;
+
+  font-weight: 500;
+}
+
+.value-data {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.guest-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+
+  background: var(--LIGHT-RED-COLOR);
+}
+
+.user-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+
+  background: var(--LIGHT-GREEN-COLOR);
+}

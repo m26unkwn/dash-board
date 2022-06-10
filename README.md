@@ -20,7 +20,8 @@
 - Users Page
 ![image](https://user-images.githubusercontent.com/46845822/173014665-91a34d09-219c-4118-9003-e0f2c7dba256.png)
 - Setting Page
-![image](https://user-images.githubusercontent.com/46845822/173014808-e3c97bad-b511-4129-b22e-323816c538df.png)
+![image](https://user-images.githubusercontent.com/46845822/173016418-3f2c5cd4-09ff-4c58-bea4-1cd89e21efda.png)
+
 
 
 

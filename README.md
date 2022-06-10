@@ -8,7 +8,7 @@
 
 ## Live App link
 
-- [Dev Quiz](https://dashh-board.netlify.app/)
+- [dash](https://dashh-board.netlify.app/)
 
 ## Technologies used
 - JavaScript

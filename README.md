@@ -11,6 +11,7 @@
 - [dash](https://dashh-board.netlify.app/)
 
 ## Screenshot
+### NOTE : Screenshot is captured as full page.
 - Signin Page- 
 ![image](https://user-images.githubusercontent.com/46845822/173014306-131acf5a-843c-4e90-9284-d7917da8a5e0.png)
 - Signup Page

@@ -33,6 +33,8 @@ export const Users = () => {
         setLoader(false);
       }
     })();
+
+    window.scrollTo(0, 0);
   }, [index]);
 
   const changeIndex = useCallback((value) => {

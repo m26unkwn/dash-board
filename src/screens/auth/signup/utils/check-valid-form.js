@@ -1,3 +1,5 @@
+import { toast } from "react-toastify";
+
 const formRegex = {
   email: /^.+@.+\.com$/,
   name: /^[a-zA-Z]+(\s*\w*)*$/,
@@ -8,17 +10,11 @@ export const signupValidation = (state, dispatch) => {
   let flag = true;
 
   if (state.email === "" || !formRegex.email.test(state.email)) {
-    dispatch({
-      type: "SET_EMAIL_ERROR",
-      payload: true,
-    });
-    flag = false;
+    toast.error("Enter valid email")
+    flag=false
   }
   if (state.password === "" || !formRegex.password.test(state.password)) {
-    dispatch({
-      type: "SET_PASSWORD_ERROR",
-      payload: true,
-    });
+    toast.error("Enter valid password min ");
     flag = false;
   }
   if (state.firstName === "" || !formRegex.name.test(state.firstName)) {

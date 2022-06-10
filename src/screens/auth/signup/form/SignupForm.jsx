@@ -25,7 +25,7 @@ export const SignupForm = () => {
   };
 
   return (
-    <form className='auth-form'>
+    <form className='auth-form' onSubmit={(e) => signUpUserHandler(e)}>
       <div className='user-input'>
         <Input
           type='text'
@@ -72,7 +72,7 @@ export const SignupForm = () => {
         </p>
       </div>
 
-      <PrimaryButton text='Sign Up' onClick={(e) => signUpUserHandler(e)} />
+      <PrimaryButton text='Sign Up' />
     </form>
   );
 };

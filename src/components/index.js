@@ -7,3 +7,4 @@ export { FilterUsers } from "./FilteredUsers/FilterUsers";
 export { InfoCard } from "./Cards/InfoCard";
 export { TwoLineChart } from "./Charts/TwoLineChart";
 export { PieChartContainer } from "./Charts/PieChartContainer";
+export { SidebarNav } from "./SidebarNav/SidebarNav";

@@ -11,22 +11,22 @@
 - [dash](https://dashh-board.netlify.app/)
 
 ## Screenshot
+
 ### NOTE : Screenshot is captured as full page.
-- Signin Page- 
-![image](https://user-images.githubusercontent.com/46845822/173014306-131acf5a-843c-4e90-9284-d7917da8a5e0.png)
+
+- Signin Page-
+  ![image](https://user-images.githubusercontent.com/46845822/173014306-131acf5a-843c-4e90-9284-d7917da8a5e0.png)
 - Signup Page
-![image](https://user-images.githubusercontent.com/46845822/173014424-58394d84-52fc-4a02-b57e-cc6054812f76.png)
+  ![image](https://user-images.githubusercontent.com/46845822/173014424-58394d84-52fc-4a02-b57e-cc6054812f76.png)
 - Dashboard Page
-![image](https://user-images.githubusercontent.com/46845822/173014584-7950142d-52b7-4326-868f-4bbbb39a59fa.png)
+  ![image](https://user-images.githubusercontent.com/46845822/173014584-7950142d-52b7-4326-868f-4bbbb39a59fa.png)
 - Users Page
-![image](https://user-images.githubusercontent.com/46845822/173014665-91a34d09-219c-4118-9003-e0f2c7dba256.png)
+  ![image](https://user-images.githubusercontent.com/46845822/173014665-91a34d09-219c-4118-9003-e0f2c7dba256.png)
 - Setting Page
-![image](https://user-images.githubusercontent.com/46845822/173016683-f84d4f8e-00ce-47b3-89c1-c6f645ef46d3.png)
-
-
-
+  ![image](https://user-images.githubusercontent.com/46845822/173016683-f84d4f8e-00ce-47b3-89c1-c6f645ef46d3.png)
 
 ## Technologies used
+
 - JavaScript
 - ReactJS
 - Firebase (for backend)
@@ -42,12 +42,12 @@
     - Sigin with email and password
 
 ### 2. Signup Page:
+
     - Signup with google
     - Sginup with apple [not working]
     - Signup with email and password
-    
-### 3 Dashboard Page:
 
+### 3 Dashboard Page:
 
     - 4 cards of revenues, like ,transaction , users
     - Line chart breakdown of may, june ,july data [working with dummy data]
@@ -64,22 +64,21 @@
     - Pagination functionality.
     - Filter the users using Debounce
 
-
 ### 5. Setting Page -
 
     - Profile Card
     - Accound Card
     - Security Card
     - Delete Account Card
-    
 
 ### 6. 404 page -
 
     - 404 Page with CTA to Dashboard
 
+### 7. Responsive -
 
-
-
+    - All pages are responsive for the following breakpoints
+    - 480px 780px
 
 ## **How to run this app Locally**
 

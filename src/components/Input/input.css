@@ -7,10 +7,6 @@
   font-weight: 500;
 }
 
-.input-field > label {
-  height: 1.1rem;
-}
-
 .input-field > input {
   background: var(--BACKGROUND-COLOR);
 

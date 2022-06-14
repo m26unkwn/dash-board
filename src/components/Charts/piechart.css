@@ -1,6 +1,5 @@
 .chart-value {
   font-weight: 500;
-  margin-bottom: 3rem;
 }
 .chart-value > div {
   margin-bottom: 1rem;
@@ -40,4 +39,10 @@
 
 .hoodies {
   background-color: #ee8484;
+}
+
+@media (max-width: 780px) {
+  .chart-value {
+    overflow-y: scroll;
+  }
 }

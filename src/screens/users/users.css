@@ -126,9 +126,31 @@ td:first-child > img {
   margin-top: 1rem;
 }
 
+.user-cta {
+  display: flex;
+  gap: 1rem;
+}
+
 @media (max-width: 780px) {
   table {
     display: block;
     overflow-x: scroll;
+  }
+  .users-header {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+  .users-title {
+    align-self: flex-start;
+  }
+  .pagination-container {
+    margin-top: 1rem;
+  }
+  .pagination-btn {
+    padding: 10px;
+  }
+  .users-filters {
+    flex-direction: column;
   }
 }

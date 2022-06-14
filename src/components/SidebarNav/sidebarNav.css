@@ -1,11 +1,7 @@
 .sidebar-content-wrapper {
   padding: 3rem 2rem;
+  height: 100%;
 
-  width: 15rem;
-  height: 95vh;
-  position: fixed;
-  border-radius: 1.8rem;
-  background: var(--PRIMARY-COLOR);
   display: flex;
   flex-direction: column;
 }

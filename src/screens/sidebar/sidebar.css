@@ -1,5 +1,10 @@
 .sidebar-container {
   grid-area: sidebar;
+  position: fixed;
+  width: 15rem;
+  height: 95vh;
+  border-radius: 1.8rem;
+  background: var(--PRIMARY-COLOR);
 }
 
 @media (max-width: 780px) {

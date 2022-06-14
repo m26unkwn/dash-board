@@ -88,3 +88,26 @@
   width: 20px;
   height: 20px;
 }
+
+/* mobile resposive */
+
+@media (max-width: 780px) {
+  .auth-sidebar {
+    display: none;
+  }
+
+  .auth-form-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-sidebar {
+    display: none;
+  }
+
+  .auth-form-wrapper {
+    width: 100%;
+    margin: 1rem;
+  }
+}

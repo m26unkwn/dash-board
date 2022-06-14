@@ -48,3 +48,9 @@ a {
 .logout-btn {
   font-weight: 500;
 }
+
+@media (max-width: 780px) {
+  .sidebar-container {
+    display: none;
+  }
+}

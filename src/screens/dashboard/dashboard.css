@@ -18,7 +18,9 @@
   margin-top: 1rem;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
+  gap: 1rem;
 }
 
 .chart-title {
@@ -149,4 +151,19 @@
 .schedule-time {
   font-size: 14px;
   color: var(--SECONDARY-TEXT-COLOR);
+}
+
+@media (max-width: 780px) {
+  .dashboard-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .dashboard-data {
+    display: flex;
+    flex-direction: column;
+  }
+  .dashboard-bottom-container {
+    display: flex;
+    flex-direction: column;
+  }
 }

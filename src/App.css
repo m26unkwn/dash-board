@@ -29,7 +29,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth 0
+  scroll-behavior: smooth 0;
 }
 
 body {
@@ -63,4 +63,12 @@ button {
 
 button:active {
   transform: scale(0.94);
+}
+
+@media (max-width: 780px) {
+  .app-container {
+    display: block;
+    grid-template-columns: none;
+    margin: 1rem;
+  }
 }

@@ -52,3 +52,15 @@
   border-radius: 50%;
   cursor: pointer;
 }
+
+@media (max-width: 780px) {
+  .header-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .header-title {
+    flex-grow: 20;
+    align-self: self-start;
+    margin-top: 1rem;
+  }
+}

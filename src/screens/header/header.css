@@ -62,5 +62,6 @@
     flex-grow: 20;
     align-self: self-start;
     margin-top: 1rem;
+    font-size: 16px;
   }
 }

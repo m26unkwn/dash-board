@@ -19,3 +19,4 @@ export { default as UsersIcon } from "./users.svg";
 export { default as TransIcon } from "./transactionSmall.svg";
 export { default as EyeIcon } from "./eye.svg";
 export { default as DisableEye } from "./disableEye.svg";
+export { default as MenuIcon } from "./menu.svg";

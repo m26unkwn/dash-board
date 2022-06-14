@@ -1,5 +1,5 @@
 import { NavLink, useLocation } from "react-router-dom";
-import { Avatar, NotificationIcon, searchIcon } from "../../assets";
+import { Avatar, NotificationIcon, searchIcon, MenuIcon } from "../../assets";
 import "./header.css";
 
 export const Header = () => {
@@ -28,6 +28,9 @@ export const Header = () => {
         <h1>{headerTitle()}</h1>
       </div>
       <div className='header-nav'>
+        <button className='header-menu'>
+          <img src={MenuIcon} alt='menu' />
+        </button>
         <div className='header-search'>
           <input type='text' placeholder='Search...' />
           <button>
